@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'orders',
     'carts',
     'store',
     'accounts',
@@ -149,3 +150,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'yutaku1011@gmail.com'
 EMAIL_HOST_PASSWORD = 'bmymeeeindntpeyd'
 EMAIL_USE_TLS = True
+
+
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
